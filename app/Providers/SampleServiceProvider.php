@@ -12,7 +12,7 @@ class SampleServiceProvider extends ServiceProvider
      * @return void
      */
     public function register(){
-        
+        // サービスコンテナにserviceProviderTestというプロバイダー名で登録
         app()->bind('serviceProviderTest', function(){
             return 'サービスプロバイダーのテスト';
         });

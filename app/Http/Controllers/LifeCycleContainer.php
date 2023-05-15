@@ -13,7 +13,7 @@ class LifeCycleContainer extends Controller{
 
         $sample = app()->make('serviceProviderTest');
 
-        dd($password, $encrypt->decrypt($password), $sample);
+        // dd($password, $encrypt->decrypt($password), $sample);
     }
 
     public function showServiceContainerTest(){
@@ -34,7 +34,7 @@ class LifeCycleContainer extends Controller{
         $sample = app()->make('sample');
         $sample->run();
 
-        dd($test ,app());
+        // dd($test ,app());
     }
 }
 
